@@ -93,20 +93,36 @@
  ┃ ┣ 📜 RunRunBackendApplication.java
  ┃ ┣ 📂 common                    # 공통 설정 및 모듈
  ┃ ┃ ┣ 📂 config                  # Security, WebSocket, S3 설정 등
+ ┃ ┃ ┣ 📂 constant                # 공통 상수 관리
  ┃ ┃ ┣ 📂 entitiy                 # 공통 BaseEntity
+ ┃ ┃ ┣ 📂 event                   # 도메인 간 결합도를 낮추기 위한 이벤트 객체
  ┃ ┃ ┣ 📂 exception               # 전역 예외 핸들러 (GlobalExceptionHandler)
+ ┃ ┃ ┣ 📂 file                    # S3 파일 스토리지 및 유틸리티
  ┃ ┃ ┣ 📂 jwt                     # JWT 필터 및 Provider
- ┃ ┃ ┗ 📂 event                   # 도메인 간 결합도를 낮추기 위한 이벤트 객체
+ ┃ ┃ ┣ 📂 listener                # 이벤트 리스너
+ ┃ ┃ ┗ 📂 response                # 공통 응답 처리
  ┃ ┣ 📂 domain                    # 비즈니스 도메인 레이어 (DDD)
- ┃ ┃ ┣ 📂 running                 # 러닝 핵심 (솔로, 배틀, 고스트)
- ┃ ┃ ┣ 📂 course                  # 코스 생성 및 PostGIS 기반 경로 관리
- ┃ ┃ ┣ 📂 crew                    # 크루 관리 및 CrewScheduler
- ┃ ┃ ┣ 📂 chat                    # 실시간 채팅 (MongoDB 연동)
- ┃ ┃ ┣ 📂 notification            # SSE + Redis Pub/Sub 알림 시스템
- ┃ ┃ ┣ 📂 payment                 # 결제 처리 및 PaymentScheduler
- ┃ ┃ ┣ 📂 membership              # 멤버십 구독 관리 및 스케줄러
- ┃ ┃ ┣ 📂 point                   # 포인트 적립/차감 및 상점
- ┃ ┃ ┗ 📂 ... (challenge, feed, friend, admin, tts)
+ ┃ ┃ ┣ 📂 admin                   # 대시보드 통계 및 서비스 총괄 관리
+ ┃ ┃ ┣ 📂 advertisement           # 광고 슬롯 및 노출 관리
+ ┃ ┃ ┣ 📂 auth                    # 사용자 인증 및 인가 서비스
+ ┃ ┃ ┣ 📂 challenge               # 챌린지 생성, 참여 및 보상 관리
+ ┃ ┃ ┣ 📂 chat                    # MongoDB 기반 실시간 크루 채팅
+ ┃ ┃ ┣ 📂 coupon                  # 쿠폰 발급 및 만료 관리
+ ┃ ┃ ┣ 📂 course                  # TMap/Mapbox 연동 및 PostGIS 경로 관리
+ ┃ ┃ ┣ 📂 crew                    # 크루 생성, 멤버 역할 및 관리 스케줄러
+ ┃ ┃ ┣ 📂 feed                    # 러닝 인증 게시글, 좋아요 및 댓글 소셜 피드
+ ┃ ┃ ┣ 📂 friend                  # 친구 요청, 수락 및 차단 시스템
+ ┃ ┃ ┣ 📂 match                   # 실시간 온/오프라인 매칭 시스템
+ ┃ ┃ ┣ 📂 membership              # 프리미엄 구독 서비스 및 정기 결제 관리
+ ┃ ┃ ┣ 📂 notification            # SSE + Redis Pub/Sub 실시간 알림
+ ┃ ┃ ┣ 📂 payment                 # Toss Payments 연동 결제 처리
+ ┃ ┃ ┣ 📂 point                   # 활동 기반 포인트 적립/차감 및 상점 관리
+ ┃ ┃ ┣ 📂 rating                  # 사용자 실력 기반 레이팅 및 등급 시스템
+ ┃ ┃ ┣ 📂 recruit                 # 러닝 멤버 모집 및 참여 관리
+ ┃ ┃ ┣ 📂 running                 # 러닝 핵심 로직 (솔로, 배틀, 고스트 러닝)
+ ┃ ┃ ┣ 📂 term                    # 약관 및 정책 관리
+ ┃ ┃ ┣ 📂 tts                     # TTS 음성 팩 및 실시간 음성 안내 서비스
+ ┃ ┃ ┗ 📂 user                    # 회원 프로필, 마이페이지 및 환경 설정
  ┃ ┗ 📂 util                      # 공통 유틸리티
  ┣ 📂 src/main/resources
  ┃ ┣ 📂 static/templates          # Thymeleaf 기반 뷰 레이어
@@ -183,6 +199,7 @@
 | **김용원** | **산출물 담당** | 회원 프로필 및 마이페이지, 소셜 기능(친구 요청/수락/차단), 피드 개발, 챌린지 관리, 환경 설정 |
 | **김광호** | **산출물 담당** | 오프라인/온라인 매칭 시스템, 실시간 알림 서비스, 사용자 레이팅 시스템 구축 |
 | **홍보경** | **Notion 담당** | 크루 시스템 기획 및 개발, 멤버십 구독 시스템, 포인트 적립 및 상점 시스템 구현 |
+
 
 
 
