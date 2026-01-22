@@ -1,10 +1,11 @@
-실시간 매칭 러닝 플랫폼 RUNRUN
-<img width="1876" height="1265" alt="readme" src="https://github.com/user-attachments/assets/77bca501-4fed-4409-8051-d6cbc78ea38f" />
+<p align="center">
+  <img src="https://capsule-render.vercel.app/render?type=waving&color=007396&height=200&section=header&text=RUNRUN&fontSize=80&animation=fadeIn" />
+</p>
 
-# 🏃‍♂️ RunRun (런런)
-### 실시간 매칭 기반 소셜 러닝 플랫폼
-
-> **"러닝의 순간이 연결의 시작이 되도록"** > 단순한 기록 측정을 넘어, 실시간 경쟁과 크루 활동으로 함께 달리는 즐거움을 선사합니다.
+<p align="center">
+  <strong>🏃‍♂️ 실시간 매칭 기반 소셜 러닝 플랫폼 🏃‍♀️</strong><br/>
+  <i>"러닝의 순간이 연결의 시작이 되도록"</i>
+</p>
 
 ---
 
@@ -164,3 +165,4 @@
 | **김용원** | **산출물 담당** | 회원 프로필 및 마이페이지, 소셜 기능(친구 요청/수락/차단), 피드 개발, 챌린지 관리, 환경 설정 |
 | **김광호** | **산출물 담당** | 오프라인/온라인 매칭 시스템, 실시간 알림 서비스, 사용자 레이팅 시스템 구축 |
 | **홍보경** | **Notion 담당** | 크루 시스템 기획 및 개발, 멤버십 구독 시스템, 포인트 적립 및 상점 시스템 구현 |
+
