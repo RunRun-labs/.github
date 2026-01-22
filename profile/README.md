@@ -200,6 +200,23 @@
 ## 📹 시연 영상 (Demo Video)
 > **"RunRun의 핵심 기능을 영상으로 확인해보세요"** — 백엔드 로직과 실시간 통신이 결합된 서비스의 주요 흐름을 시연합니다.
 
+### 📺 전체 시연 가이드
+[![RunRun Demo Video](https://img.shields.io/badge/YouTube-RunRun_Demo_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](영상_링크_주소)
+*이미지를 클릭하면 시연 영상(YouTube/Drive)으로 이동합니다.*
+
+---
+
+### 🎬 주요 기능 별 시연 (GIF)
+*영상의 길이가 길 경우, 핵심 기능만 GIF로 추출하여 배치하면 포트폴리오 효과가 극대화됩니다.*
+
+| 실시간 매칭 배틀 | 고스트 러닝 (과거 기록 경쟁) | TTS 음성 안내 가이드 |
+| :---: | :---: | :---: |
+| ![Matching](GIF_링크_또는_경로) | ![GhostRun](GIF_링크_또는_경로) | ![TTS](GIF_링크_또는_경로) |
+| `WebSocket` 기반 매칭 | `Redis` 캐싱 기반 경쟁 | `TTS API` 실시간 안내 |
+
+---
+
+
 
 
 
